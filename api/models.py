@@ -10,7 +10,6 @@ class User(AbstractUser):
 
 
 class Movie(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.TextField(null=False, max_length=32)
     director = models.TextField(null=False, max_length=32)
     casts = models.TextField(null=False)
@@ -36,7 +35,6 @@ class Movie(models.Model):
 
 
 class Review(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(10)])
