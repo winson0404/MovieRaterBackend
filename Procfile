@@ -1,0 +1,1 @@
+web: gunicorn MovieRater_Backend.wsgi --log-file -
