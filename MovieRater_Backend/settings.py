@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-ad3zj2v_)c@-g!g@yv5o@u%vj^2^72(h6+8!2pv^h43d^tw3q#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['im-fine-backend.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['movieraterbackend.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
